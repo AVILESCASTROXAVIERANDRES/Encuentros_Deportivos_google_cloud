@@ -20,7 +20,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
   app.enableCors()
   const host = '0.0.0.0';
-  const port = process.env.PORT || 443;
-  await app.listen(8080) ;
+  const port = process.env.PORT || 8080;
+  await app.listen(port) ;
 }
 bootstrap();
